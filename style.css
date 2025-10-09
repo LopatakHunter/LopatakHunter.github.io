@@ -22,7 +22,7 @@ p {
 body {
     font-family: "Oswald", sans-serif;
     text-align: center;
-    background-color: lightsalmon;
+    background-color: rgb(234, 197, 159);
     }
 .container {
     background-color: white;
@@ -74,6 +74,7 @@ ul {
     font-size: 24px;
     font-weight: bold;
     font-family: "Oswald", sans-serif;
+    border-radius: 1rem;
 }
 #navbar a {
     color: white;
@@ -93,10 +94,43 @@ ul {
     color: black;
     border-radius: 5px;
 }
-#zapati p a{
-    text-decoration: none !important;
-    display: inline !important;
-    background-color: transparent !important;
-    padding: 0rem !important;
-    margin: 0rem 0rem !important;
+#zapati .validatory a {
+    display: inline-block;
+    background: none;
+    padding: 0;
+    margin: 0 5px;
+}
+#zapati .validatory img {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    box-shadow: none;
+}
+#zapati {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "Oswald", sans-serif;
+}
+@media (max-width: 500px) {
+    #navbar ul li a {
+        font-size: 0;
+    }
+    #navbar ul li a i {
+        font-size: 24px;
+        margin: 0;
+    }
+    #navbar ul li {
+        margin: 0 5px;
+    }
+}
+@media (min-width: 501px) {
+    #navbar ul li a {
+        font-size: 20px;
+    }
+    #navbar ul li a i {
+        margin-right: 8px;
+    }
 }
