@@ -11,9 +11,10 @@ h2 {
     font-family: "Oswald", sans-serif;
     text-align: left;
 }
-h5 {
+a1 {
     color:orange;
     font-size: 15px;
+    font-weight: 600;
 }
 p {
 	font-family: "Oswald", sans-serif;
