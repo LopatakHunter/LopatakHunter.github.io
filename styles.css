@@ -197,8 +197,13 @@ img {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 }
 
 .project {
@@ -217,9 +222,12 @@ img {
 }
 
 .project-image {
-  height: calc(100% - 6.8rem);
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  background-color: rgb(64, 63, 63); /* volitelné, aby bylo logo lépe vidět */
+  display: block;
+  padding: 1rem; /* volitelné – přidá malý odstup od okrajů */
 }
 
 .project-title {
